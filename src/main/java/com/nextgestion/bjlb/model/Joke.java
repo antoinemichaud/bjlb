@@ -17,7 +17,7 @@ public class Joke {
 
     private String mainContent;
 
-    public Joke(String authorName, String authorMail, Category category, String publicationDate, String mainContent) {
+    public Joke(final String authorName, final String authorMail, final Category category, final String publicationDate, final String mainContent) {
         this.authorName = authorName;
         this.authorMail = authorMail;
         this.category = category;

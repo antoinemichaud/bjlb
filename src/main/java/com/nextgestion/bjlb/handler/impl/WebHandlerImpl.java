@@ -7,7 +7,7 @@ import com.nextgestion.bjlb.handler.WebHandler;
 public class WebHandlerImpl implements WebHandler {
 
 	@Override
-	public void handle(HttpServerRequest req) {
+	public void handle(final HttpServerRequest req) {
 		
 		final String file = "/".equals(req.path) ? "index.html" : req.path;
         final String fileRequiredPath = "webroot/" + file;
