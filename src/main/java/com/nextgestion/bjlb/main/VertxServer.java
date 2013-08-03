@@ -8,6 +8,7 @@ public class VertxServer extends Verticle {
 
     @Override
     public void start() throws Exception {
+    	
         vertx.createHttpServer().requestHandler(new Handler<HttpServerRequest>() {
             public void handle(HttpServerRequest req) {
                 String file = req.path.equals("/") ? "index.html" : req.path;
