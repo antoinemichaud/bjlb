@@ -7,3 +7,6 @@
 .idea
 bjlb.iml
 target
+.classpath
+.project
+.settings
