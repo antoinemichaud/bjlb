@@ -29,7 +29,7 @@ public class Joke {
         return authorName;
     }
 
-    public void setAuthorName(String authorName) {
+    public void setAuthorName(final String authorName) {
         this.authorName = authorName;
     }
 
@@ -37,7 +37,7 @@ public class Joke {
         return authorMail;
     }
 
-    public void setAuthorMail(String authorMail) {
+    public void setAuthorMail(final String authorMail) {
         this.authorMail = authorMail;
     }
 
@@ -45,7 +45,7 @@ public class Joke {
         return category;
     }
 
-    public void setCategory(Category category) {
+    public void setCategory(final Category category) {
         this.category = category;
     }
 
@@ -53,7 +53,7 @@ public class Joke {
         return publicationDate;
     }
 
-    public void setPublicationDate(String publicationDate) {
+    public void setPublicationDate(final String publicationDate) {
         this.publicationDate = publicationDate;
     }
 
@@ -61,7 +61,7 @@ public class Joke {
         return mainContent;
     }
 
-    public void setMainContent(String mainContent) {
+    public void setMainContent(final String mainContent) {
         this.mainContent = mainContent;
     }
 }

@@ -2,9 +2,9 @@ package com.nextgestion.bjlb.handler.impl;
 
 import org.vertx.java.core.http.HttpServerRequest;
 
-import com.nextgestion.bjlb.handler.WebHandler;
+import com.nextgestion.bjlb.handler.StaticWebHandler;
 
-public class WebHandlerImpl implements WebHandler {
+public class StaticWebHandlerImpl implements StaticWebHandler {
 
 	@Override
 	public void handle(final HttpServerRequest req) {
@@ -20,7 +20,7 @@ public class WebHandlerImpl implements WebHandler {
 	}
 	
 	private boolean fileExists(String path) {
-        return WebHandlerImpl.class.getResourceAsStream("/" + path) != null;
+        return StaticWebHandlerImpl.class.getResourceAsStream("/" + path) != null;
     }
 
 }
